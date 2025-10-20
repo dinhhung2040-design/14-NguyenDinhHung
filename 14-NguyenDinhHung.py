@@ -7,7 +7,6 @@ def add_student(name, year_of_birth, address):
     - Thêm dictionary đó vào danh sách `student_list`.
     - In ra thông báo "Da them sinh  vien <ten> thanh cong."
     """
-    ### VIẾT CODE CỦA BẠN VÀO ĐÂY ###
     student = {
         "name": name,
         "year_of_birth": year_of_birth,
@@ -23,7 +22,6 @@ def print_student_list():
     - Nếu không, duyệt qua `student_list` và in thông tin mỗi sinh viên
       trên một dòng theo định dạng: " - Ten: [Họ tên], Nam sinh: [Năm sinh], Dia chi: [Địa chỉ]"
     """
-    ### VIẾT CODE CỦA BẠN VÀO ĐÂY ###
     print("--- DANH SACH SINH VIEN ---")
     if not student_list:
         print("Danh sach trong.")
@@ -40,7 +38,6 @@ def search_student(search_name):
     - In ra thông tin của các sinh viên tìm thấy (theo định dạng như hàm print_student_list).
     - Nếu không tìm thấy, in ra "Khong tim thay sinh vien nao.".
     """
-    ### VIẾT CODE CỦA BẠN VÀO ĐÂY ###
     print("--- KET QUA TIM KIEM ---")
     key = search_name.lower()
     results = [s for s in student_list if key in s["name"].lower()]
